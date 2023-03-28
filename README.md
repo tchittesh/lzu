@@ -2,10 +2,10 @@
 
 <table>
   <tr>
-    <td style="width: 22%;">
+    <td style="width: 20%;">
       <img src="teaser.gif" alt="How LZU works" style="width: 100%;">
     </td>
-    <td style="width: 78%;">
+    <td style="width: 80%;">
       <img src="demo.gif" alt="Image 2" style="width: 100%;">
     </td>
   </tr>
@@ -20,7 +20,6 @@ NOTE: We are in the process of validating our training pipeline.
 <details>
   <summary>1) Set up the coding environment</summary>
 
-  <br>
   First, clone the repository (including the mmdet3d submodule):
   ```bash
   git clone https://github.com/tchittesh/lzu.git --recursive && cd lzu
@@ -43,7 +42,6 @@ NOTE: We are in the process of validating our training pipeline.
 <details>
   <summary>2) Download the dataset</summary>
   
-  <br>
   You'll need to set up the [nuScenes](https://www.nuscenes.org/nuscenes#download) dataset according to the instructions [here](https://github.com/open-mmlab/mmdetection3d/blob/47285b3f1e9dba358e98fcd12e523cfd0769c876/docs/en/data_preparation.md). Your final `data` folder should look like this:
   ```
    data/nuscenes/
@@ -61,7 +59,6 @@ NOTE: We are in the process of validating our training pipeline.
 <details>
   <summary>3) [Optional] Download our pretrained checkpoints</summary>
 
-  <br>
   Download our pretrained checkpoints from [here](https://drive.google.com/file/d/1nofuqZ7YSKblIDAltbxp1pFOiQtUzp8B/view?usp=sharing) and place them in this directory (using symbolic links if necessary).
 </details>
 
