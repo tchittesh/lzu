@@ -1,9 +1,3 @@
-<style>
-  details > * {
-    padding-bottom: 5px;
-  }
-</style>
-
 # Learning to Zoom and Unzoom
 
 <table>
@@ -11,7 +5,7 @@
     <td style="width: 23%;">
       <img src="teaser.gif" alt="How LZU works" style="width: 100%;">
     </td>
-    <td style="width: 75%;">
+    <td style="width: 77%;">
       <img src="demo.gif" alt="Image 2" style="width: 100%;">
     </td>
   </tr>
@@ -98,7 +92,7 @@ As can be seen, LZU achieves a superior accuracy-latency tradeoff compared to un
 
 ## Citation
 
-If you find our code useful, please cite us!
+If you find our code useful, please consider citing us!
 ```
 @misc{thavamani2023learning,
       title={Learning to Zoom and Unzoom}, 
