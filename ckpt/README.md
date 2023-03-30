@@ -1,1 +1,1 @@
-Download our pretrained checkpoints from [here](https://drive.google.com/file/d/1nofuqZ7YSKblIDAltbxp1pFOiQtUzp8B/view?usp=sharing) and place them in this directory (using symbolic links if you wish).
+Download our pretrained checkpoints from [Google Drive](https://drive.google.com/file/d/1nofuqZ7YSKblIDAltbxp1pFOiQtUzp8B/view?usp=sharing) and place them in this directory, using symbolic links if you wish.

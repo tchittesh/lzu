@@ -10,13 +10,13 @@ esac
 
 # Test checkpointed model
 # set data.test.samples_per_gpu=1 if runnning timing tests
-# python tools/test.py \
-#     configs/$expName.py \
-#     ckpt/$expName.pth \
-#     --out $outDir/$expName/test_checkpoint/results.pkl \
-#     --eval bbox \
-#     --cfg-options \
-#         data.test.samples_per_gpu=8 \
+python tools/test.py \
+    configs/$expName.py \
+    ckpt/$expName.pth \
+    --out $outDir/$expName/test_checkpoint/results.pkl \
+    --eval bbox \
+    --cfg-options \
+        data.test.samples_per_gpu=8 \
 
 # Train
 torchrun \
@@ -32,10 +32,10 @@ torchrun \
 
 # Test trained model
 # set data.test.samples_per_gpu=1 if runnning timing tests
-# python tools/test.py \
-#     configs/$expName.py \
-#     $outDir/$expName/work/latest.pth \
-#     --out $outDir/$expName/test/results.pkl \
-#     --eval bbox \
-#     --cfg-options \
-#         data.test.samples_per_gpu=8 \
+python tools/test.py \
+    configs/$expName.py \
+    $outDir/$expName/work/latest.pth \
+    --out $outDir/$expName/test/results.pkl \
+    --eval bbox \
+    --cfg-options \
+        data.test.samples_per_gpu=8 \

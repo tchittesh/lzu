@@ -22,7 +22,9 @@ model = dict(
         grid_shape=(27, 48),
         separable=True,
         attraction_fwhm=10,
-        anti_crop=True))
+        anti_crop=True),
+    bbox_head=dict(
+        type='FCOSMono3DHeadNoRescale'))
 
 class_names = [
     'car', 'truck', 'trailer', 'bus', 'construction_vehicle', 'bicycle',

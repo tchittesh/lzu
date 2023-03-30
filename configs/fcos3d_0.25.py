@@ -13,7 +13,9 @@ model = dict(
         depth=50,
         dcn=dict(type='DCNv2', deform_groups=1, fallback_on_stride=False),
         stage_with_dcn=(False, False, True, True),
-        init_cfg=dict(checkpoint='torchvision://resnet50')))
+        init_cfg=dict(checkpoint='torchvision://resnet50')),
+    bbox_head=dict(
+        type='FCOSMono3DHeadNoRescale'))
 
 class_names = [
     'car', 'truck', 'trailer', 'bus', 'construction_vehicle', 'bicycle',

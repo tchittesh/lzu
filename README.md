@@ -1,25 +1,21 @@
 # Learning to Zoom and Unzoom
 
-<table>
-  <tr>
-    <td style="width: 20%;">
-      <img src="teaser.gif" alt="How LZU works" style="width: 100%;">
-    </td>
-    <td style="width: 80%;">
-      <img src="demo.gif" alt="Image 2" style="width: 100%;">
-    </td>
-  </tr>
-</table>
-
 Official repository for the CVPR 2023 paper _Learning to Zoom and Unzoom_ [[paper]](https://arxiv.org/abs/2303.15390) [[website]](https://tchittesh.github.io/lzu/).
 
-NOTE: We are in the process of validating our training pipeline. 
+<p float="left">
+  <img src="teaser.gif" alt="How LZU works" width="21.7%">
+  <img src="demo.gif" alt="Video Demo of LZU" width="77%">
+</p>
+
+In a nutshell, LZU is a highly flexible method to apply spatial attention to neural nets.
+The extremely simple source code ([zoom](./lzu/fixed_grid.py) and [unzoom](./lzu/invert_grid.py)) can be applied to any model that uses spatial processing (e.g. convolutions).
 
 ## Setup (Code + Data + Models)
 
 <details>
   <summary>1) Set up the coding environment</summary>
 
+  <br></br>
   First, clone the repository (including the mmdet3d submodule):
   ```bash
   git clone https://github.com/tchittesh/lzu.git --recursive && cd lzu
@@ -31,7 +27,7 @@ NOTE: We are in the process of validating our training pipeline.
   ```
   conda env create -f environment.yml
   ```
-  - OR install the MMDetection3D (v1.0.0rc6) submodule according to the instructions [here](https://github.com/open-mmlab/mmdetection3d/blob/47285b3f1e9dba358e98fcd12e523cfd0769c876/docs/en/getting_started.md) and then install our lzu package with
+  - OR install it from scratch according to [getting_started.md](https://github.com/open-mmlab/mmdetection3d/blob/47285b3f1e9dba358e98fcd12e523cfd0769c876/docs/en/getting_started.md) and then install our lzu package with
   ```bash
   pip install -e .
   ```
@@ -42,7 +38,8 @@ NOTE: We are in the process of validating our training pipeline.
 <details>
   <summary>2) Download the dataset</summary>
   
-  You'll need to set up the [nuScenes](https://www.nuscenes.org/nuscenes#download) dataset according to the instructions [here](https://github.com/open-mmlab/mmdetection3d/blob/47285b3f1e9dba358e98fcd12e523cfd0769c876/docs/en/data_preparation.md). Your final `data` folder should look like this:
+  <br></br>
+  You'll need to set up the [nuScenes](https://www.nuscenes.org/nuscenes#download) dataset according to [data_preparation.md](https://github.com/open-mmlab/mmdetection3d/blob/47285b3f1e9dba358e98fcd12e523cfd0769c876/docs/en/data_preparation.md). Your final `data` folder should look like this:
   ```
    data/nuscenes/
    ├── maps/
@@ -59,7 +56,8 @@ NOTE: We are in the process of validating our training pipeline.
 <details>
   <summary>3) [Optional] Download our pretrained checkpoints</summary>
 
-  Download our pretrained checkpoints from [here](https://drive.google.com/file/d/1nofuqZ7YSKblIDAltbxp1pFOiQtUzp8B/view?usp=sharing) and place them in this directory (using symbolic links if necessary).
+  <br></br>
+  Download our pretrained checkpoints from [Google Drive](https://drive.google.com/file/d/1nofuqZ7YSKblIDAltbxp1pFOiQtUzp8B/view?usp=sharing) and place them in this directory, using symbolic links if necessary.
 </details>
 
 ## Scripts
