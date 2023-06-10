@@ -1,6 +1,6 @@
 # Learning to Zoom and Unzoom
 
-Official repository for the CVPR 2023 paper _Learning to Zoom and Unzoom_ [[paper]](https://arxiv.org/abs/2303.15390) [[website]](https://tchittesh.github.io/lzu/).
+Official repository for the CVPR 2023 paper _Learning to Zoom and Unzoom_ [[paper]](https://arxiv.org/abs/2303.15390) [[website]](https://tchittesh.github.io/lzu/) [[talk]](https://youtu.be/wALSrBZiUgc).
 
 <p float="left">
   <img src="teaser.gif" alt="How LZU works" width="21.7%">
